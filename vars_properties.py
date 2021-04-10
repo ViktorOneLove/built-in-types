@@ -2,6 +2,10 @@ import sys
 
 
 def print_vars():
+    """
+    Prints names of local variables and is it a standard built-in type or not
+    in the scope from which it was called
+    """
     try:
         frame = sys._getframe()
     except ValueError:
